@@ -1,0 +1,14 @@
+/* News BOX */
+
+.news-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    
+    
+    padding: 10px;
+  }
+  

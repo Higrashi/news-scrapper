@@ -1,0 +1,130 @@
+.news-item {
+    width: 700px; 
+    /* height: 300px; */
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .image-head-box {
+    width: 100%;
+    height: 500px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    
+  }
+  
+  .image-head {
+    width: 100%;
+   
+  }
+  
+  /* .image-head:hover {
+    filter: grayscale(1);
+  } */
+
+  .news-item:hover .image-head {
+    filter: grayscale(1);
+  }
+
+  .news-item:hover .image-head-box {
+    filter: grayscale(1);
+  }
+  
+  .news-item h2,p {
+    padding: 10px;
+    transition: .1s;
+  }
+  
+  .news-item:hover p {
+    color: #f89866;
+  }
+  .news-item:hover h2 {
+    color: #f89866;
+  }
+
+  /* Article Overlay */
+
+  .article-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: rgba(0,0,0,10);
+    transition: .3s;
+    transform: translateX(-130%);
+    z-index: 12;
+    padding-top: 20px;
+  }
+
+  .text-body {
+    width: 70%;
+    margin: 100px auto;
+    height: 80%;
+    /* border: 1px solid white; */
+    color: white;
+    overflow-y: scroll; 
+  }
+
+  .text-body p {
+    color: white;
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .article-active {
+    transform: translateX(0%);
+  }
+
+  .close-btn-article {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .loader {
+      margin-top: 20% !important;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .text-body {
+      width: 95%;
+    }
+
+    .text-body p {
+      font-size: 1.2rem;
+    }
+
+    .image-head-box {
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .close-btn-article {
+      top: 10%;
+      right: 10%;
+      font-size: 3rem;
+    }
+
+    .image-head-box {
+      width: 100%;
+      height: 200px;
+    }
+
+    .news-item h2,p {
+      padding: 0px;
+      transition: .1s;
+      text-align: left;
+    }
+  }
